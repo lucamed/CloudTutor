@@ -38,7 +38,7 @@ export const weeks: Week[] = [
     description: "Move bytes efficiently: object vs block vs file storage, smart routing and edge caching.",
     intro:
       "Week 4 is about data in motion and at rest. You'll learn the three shapes of cloud storage, how route tables and gateways steer packets, and how a CDN puts your content physically closer to your users.",
-    status: "coming-soon",
+    status: "available",
     conceptSlugs: ["object-storage", "block-storage", "file-storage", "routing", "cdn"],
   },
   {
@@ -48,7 +48,7 @@ export const weeks: Week[] = [
     description: "Two modern deployment models: portable container images and event-driven functions.",
     intro:
       "Week 5 contrasts the two dominant deployment models in modern cloud apps. You'll learn what containers actually package, what serverless functions actually run, and how to choose between them based on workload shape.",
-    status: "coming-soon",
+    status: "available",
     conceptSlugs: ["container-orchestration", "serverless", "containers-vs-serverless"],
   },
   {
@@ -58,7 +58,7 @@ export const weeks: Week[] = [
     description: "Observability and FinOps: know what is running, why, and what it costs you.",
     intro:
       "Week 6 closes the loop: you can't operate what you can't see, and you can't scale what you can't price. You'll learn the three pillars of observability and the habits that keep your cloud bill predictable.",
-    status: "coming-soon",
+    status: "available",
     conceptSlugs: ["monitoring", "logging", "cost-awareness"],
   },
 ];
