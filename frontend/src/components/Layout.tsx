@@ -8,9 +8,8 @@ interface LayoutProps {
 }
 
 const navLinks = [
+  { label: "How it works", to: "/how-it-works" },
   { label: "Study Path", to: "/study-path" },
-  { label: "Fundamentals", to: "/study-path/week-1" },
-  { label: "About", to: "/" },
 ];
 
 export function Layout({ children }: LayoutProps) {
@@ -36,11 +35,10 @@ export function Layout({ children }: LayoutProps) {
                   <Link
                     key={link.to + link.label}
                     to={link.to}
-                    className={`hidden sm:inline-block text-sm font-medium transition-colors ${
-                      isActive
+                    className={`hidden sm:inline-block text-sm font-medium transition-colors ${isActive
                         ? "text-primary"
                         : "text-gray-600 dark:text-gray-300 hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </Link>

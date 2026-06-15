@@ -80,13 +80,7 @@ export function ConceptPage() {
 
         {/* Page header */}
         <header className="mb-12">
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            {week && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
-                📅 Week {week.number} – {week.title}
-              </span>
-            )}
-          </div>
+
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground mb-4 leading-tight">
             {concept.name}

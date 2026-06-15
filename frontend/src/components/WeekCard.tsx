@@ -51,20 +51,7 @@ export function WeekCard({ week }: WeekCardProps) {
             </span>
           </div>
 
-          <span
-            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border shrink-0 ${
-              isAvailable
-                ? "bg-primary/10 text-primary border-primary/20"
-                : "bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-400 border-border"
-            }`}
-          >
-            {isAvailable ? (
-              <Check className="w-3 h-3" />
-            ) : (
-              <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
-            )}
-            {isAvailable ? "Available" : "Coming soon"}
-          </span>
+
         </div>
 
         {/* Title + description */}

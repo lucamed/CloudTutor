@@ -4,6 +4,7 @@ import { LandingPage } from "./components/LandingPage";
 import { StudyPathPage } from "./pages/StudyPathPage";
 import { WeekPage } from "./pages/WeekPage";
 import { ConceptPage } from "./pages/ConceptPage";
+import { HowItWorksPage } from "./pages/HowItWorksPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/study-path" element={<StudyPathPage />} />
           <Route path="/study-path/:weekId" element={<WeekPage />} />
           <Route path="/concepts/:slug" element={<ConceptPage />} />

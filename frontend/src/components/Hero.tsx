@@ -1,24 +1,6 @@
-import { ArrowRight, Clock, Layers, Wrench } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { HeroIllustration } from "./HeroIllustration";
-
-const stats = [
-  {
-    icon: Clock,
-    value: "6 weeks",
-    label: "Guided study path",
-  },
-  {
-    icon: Layers,
-    value: "20+ concepts",
-    label: "Cloud fundamentals",
-  },
-  {
-    icon: Wrench,
-    value: "Architecture sandbox",
-    label: "Build and compare designs",
-  },
-];
 
 export function Hero() {
   const navigate = useNavigate();
@@ -43,10 +25,6 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* LEFT: copy + CTA */}
           <div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6">
-              🚀 Let&apos;s learn cloud
-            </span>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1] mb-6">
               Your interactive{" "}
               <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
@@ -73,13 +51,14 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <a
-                href="#how-it-works"
+              <button
+                type="button"
+                onClick={() => navigate("/how-it-works")}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
               >
                 How it works
                 <span aria-hidden>→</span>
-              </a>
+              </button>
             </div>
 
             <p className="text-xs text-gray-500 dark:text-gray-400">
@@ -87,34 +66,9 @@ export function Hero() {
             </p>
           </div>
 
-          {/* RIGHT: illustration + stats */}
+          {/* RIGHT: illustration */}
           <div className="relative">
             <HeroIllustration />
-
-            {/* Stats badges */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {stats.map((stat) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={stat.value}
-                    className="flex items-start gap-3 p-3 rounded-xl bg-card border border-border shadow-sm"
-                  >
-                    <div className="shrink-0 p-2 rounded-lg bg-primary/10 text-primary">
-                      <Icon className="w-4 h-4" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-sm font-bold text-foreground leading-tight">
-                        {stat.value}
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-snug">
-                        {stat.label}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>

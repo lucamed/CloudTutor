@@ -100,11 +100,7 @@ export function HeroIllustration() {
         </div>
       </div>
 
-      {/* Floating accent badge */}
-      <div className="absolute -top-3 -right-3 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-card border border-border shadow-md">
-        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-        <span className="text-xs font-medium text-foreground">sandbox ready</span>
-      </div>
+
     </div>
   );
 }

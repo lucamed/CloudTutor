@@ -25,9 +25,7 @@ export function StudyPathPage() {
 
         {/* Header */}
         <div className="max-w-2xl mb-12">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-4">
-            📚 Study Path
-          </span>
+
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground mb-3">
             From zero to cloud-fluent in{" "}
             <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
